@@ -6,6 +6,8 @@
 //import { ToggleSwitch } from "./project/toggleswitch/toggleswitch";
 //import { ShortCircuit } from "./circuit";
 //import { Counter } from "./components/hooks/usestate/index.jsx";
+import { DarkLight, ThemeProvider } from "./components/hooks/ContextApi/DarkLight.jsx";
+import { Home } from "./components/hooks/ContextApi/home.jsx";
 import { BioProvider } from "./components/hooks/ContextApi/index.jsx";
 import { UseRef } from "./components/hooks/useRef/index.jsx";
 
@@ -20,10 +22,10 @@ export const App = ()=>{
 
   return (
     <>
-      {/* <UseRef/>*/}
-      <BioProvider>
-        <Home />
-      </BioProvider>
+    <ThemeProvider>
+      <DarkLight/>
+    </ThemeProvider>
+
     </>
   );   
 };

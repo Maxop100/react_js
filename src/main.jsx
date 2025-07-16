@@ -14,6 +14,7 @@ import { ParentComponent } from './components/propdrilling.jsx'
 
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/*<Registration/>
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
    <ShortCircuit/>
    <ContactForm/>*/}
    <App/>
+
    
  
   </StrictMode>,
