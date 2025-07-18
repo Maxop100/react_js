@@ -9,6 +9,8 @@
 import { DarkLight, ThemeProvider } from "./components/hooks/ContextApi/DarkLight.jsx";
 import { Home } from "./components/hooks/ContextApi/home.jsx";
 import { BioProvider } from "./components/hooks/ContextApi/index.jsx";
+import { ReactMemo } from "./components/hooks/useMemo/ReactMemo.jsx";
+import MemoParentComponent from "./components/hooks/useMemo/Usememo.jsx";
 import { ReducerComponent } from "./components/hooks/useReducer/index.jsx";
 import { UseRef } from "./components/hooks/useRef/index.jsx";
 
@@ -25,8 +27,9 @@ export const App = ()=>{
     <>
     {/*<ThemeProvider>
       <DarkLight/>
-    </ThemeProvider>*/}
-    <ReducerComponent/>
+    </ThemeProvider>
+    <ReducerComponent/>*/}
+    <ReactMemo/>
 
     </>
   );   
